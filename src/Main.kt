@@ -53,7 +53,7 @@ fun main (args: Array<String>){
 
     val names = listOf("Luis","Alberto","Santiago","Martin","Alexander")
 
-    names.filter {it.startsWith("a") }.map { it.toUpperCase()}
+    names.asSequence().filter{it.startsWith("a") }.map { it.toUpperCase()}.toList()
 
 }
 
